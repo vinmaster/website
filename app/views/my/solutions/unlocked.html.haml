@@ -28,7 +28,7 @@
     %h4
       You have also unlocked
       %strong #{@unlocked_side_exercise_solutions.size}
-      bonus exercises:
+      practice exercises:
     -@unlocked_side_exercise_solutions.each do |solution|
       =link_to [:my, solution], target: "_blank", class: 'side-exercise' do
         =graphical_image solution.exercise.turquoise_icon_url, class: 'turquoise'
